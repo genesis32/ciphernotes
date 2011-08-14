@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		534F12DB13F87EB500528F2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534F12DA13F87EB500528F2D /* UIKit.framework */; };
+		534F12DD13F87EB500528F2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534F12DC13F87EB500528F2D /* Foundation.framework */; };
+		534F12DF13F87EB500528F2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534F12DE13F87EB500528F2D /* CoreGraphics.framework */; };
+		534F12E513F87EB500528F2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 534F12E313F87EB500528F2D /* InfoPlist.strings */; };
+		534F12E713F87EB500528F2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 534F12E613F87EB500528F2D /* main.m */; };
+		534F12EB13F87EB500528F2D /* CipherNotesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 534F12EA13F87EB500528F2D /* CipherNotesAppDelegate.m */; };
+		534F12EE13F87EB500528F2D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F12EC13F87EB500528F2D /* MainWindow.xib */; };
+		534F12F113F87EB500528F2D /* CipherNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 534F12F013F87EB500528F2D /* CipherNotesViewController.m */; };
+		534F12F413F87EB500528F2D /* CipherNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F12F213F87EB500528F2D /* CipherNotesViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		534F12D613F87EB500528F2D /* CipherNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CipherNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		534F12DA13F87EB500528F2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		534F12DC13F87EB500528F2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		534F12DE13F87EB500528F2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		534F12E213F87EB500528F2D /* CipherNotes-Info.plist */ = {isa = PBXFileReference; path = "CipherNotes-Info.plist"; sourceTree = "<group>"; };
+		534F12E413F87EB500528F2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		534F12E613F87EB500528F2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		534F12E813F87EB500528F2D /* CipherNotes-Prefix.pch */ = {isa = PBXFileReference; path = "CipherNotes-Prefix.pch"; sourceTree = "<group>"; };
+		534F12E913F87EB500528F2D /* CipherNotesAppDelegate.h */ = {isa = PBXFileReference; path = CipherNotesAppDelegate.h; sourceTree = "<group>"; };
+		534F12EA13F87EB500528F2D /* CipherNotesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CipherNotesAppDelegate.m; sourceTree = "<group>"; };
+		534F12ED13F87EB500528F2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		534F12EF13F87EB500528F2D /* CipherNotesViewController.h */ = {isa = PBXFileReference; path = CipherNotesViewController.h; sourceTree = "<group>"; };
+		534F12F013F87EB500528F2D /* CipherNotesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CipherNotesViewController.m; sourceTree = "<group>"; };
+		534F12F313F87EB500528F2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CipherNotesViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		534F12D313F87EB500528F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534F12DB13F87EB500528F2D /* UIKit.framework in Frameworks */,
+				534F12DD13F87EB500528F2D /* Foundation.framework in Frameworks */,
+				534F12DF13F87EB500528F2D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		534F12CB13F87EB500528F2D = {
+			isa = PBXGroup;
+			children = (
+				534F12E013F87EB500528F2D /* CipherNotes */,
+				534F12D913F87EB500528F2D /* Frameworks */,
+				534F12D713F87EB500528F2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		534F12D713F87EB500528F2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				534F12D613F87EB500528F2D /* CipherNotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		534F12D913F87EB500528F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				534F12DA13F87EB500528F2D /* UIKit.framework */,
+				534F12DC13F87EB500528F2D /* Foundation.framework */,
+				534F12DE13F87EB500528F2D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		534F12E013F87EB500528F2D /* CipherNotes */ = {
+			isa = PBXGroup;
+			children = (
+				534F12E913F87EB500528F2D /* CipherNotesAppDelegate.h */,
+				534F12EA13F87EB500528F2D /* CipherNotesAppDelegate.m */,
+				534F12EC13F87EB500528F2D /* MainWindow.xib */,
+				534F12EF13F87EB500528F2D /* CipherNotesViewController.h */,
+				534F12F013F87EB500528F2D /* CipherNotesViewController.m */,
+				534F12F213F87EB500528F2D /* CipherNotesViewController.xib */,
+				534F12E113F87EB500528F2D /* Supporting Files */,
+			);
+			path = CipherNotes;
+			sourceTree = "<group>";
+		};
+		534F12E113F87EB500528F2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				534F12E213F87EB500528F2D /* CipherNotes-Info.plist */,
+				534F12E313F87EB500528F2D /* InfoPlist.strings */,
+				534F12E613F87EB500528F2D /* main.m */,
+				534F12E813F87EB500528F2D /* CipherNotes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		534F12D513F87EB500528F2D /* CipherNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534F12F713F87EB500528F2D /* Build configuration list for PBXNativeTarget "CipherNotes" */;
+			buildPhases = (
+				534F12D213F87EB500528F2D /* Sources */,
+				534F12D313F87EB500528F2D /* Frameworks */,
+				534F12D413F87EB500528F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CipherNotes;
+			productName = CipherNotes;
+			productReference = 534F12D613F87EB500528F2D /* CipherNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		534F12CD13F87EB500528F2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = N/A;
+			};
+			buildConfigurationList = 534F12D013F87EB500528F2D /* Build configuration list for PBXProject "CipherNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 534F12CB13F87EB500528F2D;
+			productRefGroup = 534F12D713F87EB500528F2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				534F12D513F87EB500528F2D /* CipherNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		534F12D413F87EB500528F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534F12E513F87EB500528F2D /* InfoPlist.strings in Resources */,
+				534F12EE13F87EB500528F2D /* MainWindow.xib in Resources */,
+				534F12F413F87EB500528F2D /* CipherNotesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		534F12D213F87EB500528F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534F12E713F87EB500528F2D /* main.m in Sources */,
+				534F12EB13F87EB500528F2D /* CipherNotesAppDelegate.m in Sources */,
+				534F12F113F87EB500528F2D /* CipherNotesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		534F12E313F87EB500528F2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534F12E413F87EB500528F2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		534F12EC13F87EB500528F2D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534F12ED13F87EB500528F2D /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		534F12F213F87EB500528F2D /* CipherNotesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534F12F313F87EB500528F2D /* en */,
+			);
+			name = CipherNotesViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		534F12F513F87EB500528F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		534F12F613F87EB500528F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		534F12F813F87EB500528F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CipherNotes/CipherNotes-Prefix.pch";
+				INFOPLIST_FILE = "CipherNotes/CipherNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		534F12F913F87EB500528F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CipherNotes/CipherNotes-Prefix.pch";
+				INFOPLIST_FILE = "CipherNotes/CipherNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		534F12D013F87EB500528F2D /* Build configuration list for PBXProject "CipherNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534F12F513F87EB500528F2D /* Debug */,
+				534F12F613F87EB500528F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		534F12F713F87EB500528F2D /* Build configuration list for PBXNativeTarget "CipherNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534F12F813F87EB500528F2D /* Debug */,
+				534F12F913F87EB500528F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 534F12CD13F87EB500528F2D /* Project object */;
+}
