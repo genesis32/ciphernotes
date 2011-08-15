@@ -36,7 +36,6 @@
 		53C5792B13F88AE80052CD29 /* HtmlEmailContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 53C5792A13F88AE80052CD29 /* HtmlEmailContent.html */; };
 		53C5793413F898C10052CD29 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5793213F898C10052CD29 /* ContactList.m */; };
 		53C5793513F898C10052CD29 /* ContactList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C5793313F898C10052CD29 /* ContactList.xib */; };
-		53C5798513F8ADF60052CD29 /* MessageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53C5798013F8ADF60052CD29 /* MessageModel.xcdatamodeld */; };
 		53C5798613F8ADF60052CD29 /* ReadMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5798313F8ADF60052CD29 /* ReadMessageController.m */; };
 		53C5798713F8ADF60052CD29 /* ReadMessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C5798413F8ADF60052CD29 /* ReadMessageController.xib */; };
 /* End PBXBuildFile section */
@@ -157,9 +156,8 @@
 		53C5793113F898C10052CD29 /* ContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
 		53C5793213F898C10052CD29 /* ContactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
 		53C5793313F898C10052CD29 /* ContactList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactList.xib; sourceTree = "<group>"; };
-		53C5797F13F8ADF50052CD29 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; path = Contact.h; sourceTree = "<group>"; };
-		53C5798113F8ADF60052CD29 /* MessageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessageModel.xcdatamodel; sourceTree = "<group>"; };
-		53C5798213F8ADF60052CD29 /* ReadMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ReadMessageController.h; sourceTree = "<group>"; };
+		53C5797F13F8ADF50052CD29 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		53C5798213F8ADF60052CD29 /* ReadMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadMessageController.h; sourceTree = "<group>"; };
 		53C5798313F8ADF60052CD29 /* ReadMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadMessageController.m; sourceTree = "<group>"; };
 		53C5798413F8ADF60052CD29 /* ReadMessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadMessageController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				53C5797F13F8ADF50052CD29 /* Contact.h */,
-				53C5798013F8ADF60052CD29 /* MessageModel.xcdatamodeld */,
 				53C5798213F8ADF60052CD29 /* ReadMessageController.h */,
 				53C5798313F8ADF60052CD29 /* ReadMessageController.m */,
 				53C5798413F8ADF60052CD29 /* ReadMessageController.xib */,
@@ -471,7 +468,6 @@
 				53A7B57813F881350093BEB9 /* Contact.m in Sources */,
 				53C5792513F882890052CD29 /* ComposeViewController.m in Sources */,
 				53C5793413F898C10052CD29 /* ContactList.m in Sources */,
-				53C5798513F8ADF60052CD29 /* MessageModel.xcdatamodeld in Sources */,
 				53C5798613F8ADF60052CD29 /* ReadMessageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,16 +627,6 @@
 				53A7B56C13F8807D0093BEB9 /* MessageModel.xcdatamodel */,
 			);
 			currentVersion = 53A7B56C13F8807D0093BEB9 /* MessageModel.xcdatamodel */;
-			path = MessageModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		53C5798013F8ADF60052CD29 /* MessageModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				53C5798113F8ADF60052CD29 /* MessageModel.xcdatamodel */,
-			);
-			currentVersion = 53C5798113F8ADF60052CD29 /* MessageModel.xcdatamodel */;
 			path = MessageModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
