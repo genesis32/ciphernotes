@@ -7,13 +7,90 @@
 //
 
 #import "CipherNotesAppDelegate.h"
-
+#import "Message.h"
 #import "CipherNotesViewController.h"
 
 @implementation CipherNotesAppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+
+- (NSManagedObjectContext *) managedObjectContext {
+    
+    if (managedObjectContext != nil) {
+        return managedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [managedObjectContext setPersistentStoreCoordinator: coordinator];
+    }
+    
+    return managedObjectContext;
+}
+
+- (NSManagedObjectModel *)managedObjectModel {
+    
+    if (managedObjectModel != nil) {
+        return managedObjectModel;
+    }
+    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+    
+    return managedObjectModel;
+}
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    
+    if (persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+    
+    NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory]
+                                               stringByAppendingPathComponent: @"secdef.sqlite"]];
+    NSError *error = nil;
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
+                                  initWithManagedObjectModel:[self managedObjectModel]];
+    if(![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                 configuration:nil URL:storeUrl options:nil error:&error]) {
+        /*Error for store creation should be handled in here*/
+    }
+    
+    return persistentStoreCoordinator;
+}
+
+- (NSString *)applicationDocumentsDirectory {
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url 
+{
+    if(!url) {
+        return NO;
+    }
+    
+    NSString *msgId = [url host];
+    NSString *aesKey = [[[url relativePath] substringFromIndex:1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"msgid: %@ key: %@", msgId, aesKey);
+    
+    CipherNotesViewController *mvc = [[CipherNotesViewController alloc] initWithNibName:@"CipherNotesViewController" bundle:nil];
+    
+    SecDefMessage *msg = [SecDefMessage messageFromService:msgId withKey:aesKey];
+    
+    NSManagedObject *sobj = [msg prepareForSave:self.managedObjectContext];
+    
+    NSError *err;
+    if([self.managedObjectContext save:&err]) {
+        NSLog(@"Saved message!");
+    } else {
+        NSLog(@"Error saving message %@", [err localizedDescription]);
+    }
+    
+    self.window.rootViewController = mvc;
+    [mvc loadMessage:msg];
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -67,6 +144,11 @@
 {
     [_window release];
     [_viewController release];
+    
+    [managedObjectContext release];
+    [managedObjectModel release];
+    [persistentStoreCoordinator release];
+    
     [super dealloc];
 }
 

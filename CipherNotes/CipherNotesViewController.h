@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CipherNotesViewController : UIViewController
+@class ComposeViewController;
+@class ReadMessageController;
+@class SecDefMessage;
+
+@interface CipherNotesViewController : UIViewController {
+    ComposeViewController *composeViewController;
+    ReadMessageController *readMessageController;
+    UINavigationBar *navBar;
+}
+
+@property (retain, nonatomic) ComposeViewController *composeViewController;
+@property (retain, nonatomic) ReadMessageController *readMessageController;
+
+- (void) loadMessage:(SecDefMessage *)message;
 
 @end
+
+
