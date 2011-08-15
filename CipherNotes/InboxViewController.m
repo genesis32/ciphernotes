@@ -1,15 +1,14 @@
 //
-//  ReadMessageController.m
+//  InboxViewController.m
 //  CipherNotes
 //
 //  Created by David Massey on 8/14/11.
 //  Copyright 2011 N/A. All rights reserved.
 //
 
-#import "ReadMessageController.h"
+#import "InboxViewController.h"
 
-@implementation ReadMessageController
-@synthesize messageTextView;
+@implementation InboxViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -18,10 +17,6 @@
         // Custom initialization
     }
     return self;
-}
-
-- (IBAction)closeButton:(id)sender {
-    [self.view removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,7 +37,6 @@
 
 - (void)viewDidUnload
 {
-    [self setMessageTextView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -54,8 +48,4 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [messageTextView release];
-    [super dealloc];
-}
 @end

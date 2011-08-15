@@ -11,15 +11,17 @@
 @class ComposeViewController;
 @class ReadMessageController;
 @class SecDefMessage;
+@class MessageList;
 
 @interface CipherNotesViewController : UIViewController {
     ComposeViewController *composeViewController;
     ReadMessageController *readMessageController;
-    UINavigationBar *navBar;
+    MessageList           *messageList;
 }
 
 @property (retain, nonatomic) ComposeViewController *composeViewController;
 @property (retain, nonatomic) ReadMessageController *readMessageController;
+@property (retain, nonatomic) MessageList *messageList;
 
 - (void) loadMessage:(SecDefMessage *)message;
 

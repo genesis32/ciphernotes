@@ -77,7 +77,7 @@
     
     SecDefMessage *msg = [SecDefMessage messageFromService:msgId withKey:aesKey];
     
-    NSManagedObject *sobj = [msg prepareForSave:self.managedObjectContext];
+    [msg prepareForSave:self.managedObjectContext];
     
     NSError *err;
     if([self.managedObjectContext save:&err]) {

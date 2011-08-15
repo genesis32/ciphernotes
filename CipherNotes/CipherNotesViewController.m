@@ -12,11 +12,13 @@
 #import "ClientServerComm.h"
 #import "AppData.h"
 #import "CryptoUtils.h"
+#import "MessageList.h"
 
 @implementation CipherNotesViewController
 
 @synthesize readMessageController;
 @synthesize composeViewController;
+@synthesize messageList;
 
 - (void)didReceiveMemoryWarning
 {
@@ -75,7 +77,16 @@
 }
 
 - (IBAction)inboxButtonPushed:(id)sender {
+    if(self.messageList == nil) {
+        MessageList *cc = [[MessageList alloc] initWithNibName:@"MessageList" bundle:nil];
+        self.messageList = cc;
+        self.messageList.mainController = self;
+        [cc release];
+    }
     
+    [self.view insertSubview:self.messageList.view atIndex:0];
+    [self.view bringSubviewToFront:self.messageList.view];
+    [self.messageList viewDidAppear:NO];
 }
 
 - (IBAction)composeButtonPushed:(id)sender {
@@ -103,7 +114,6 @@
 }
 
 - (void)dealloc {
-    [navBar release];
     [super dealloc];
 }
 @end

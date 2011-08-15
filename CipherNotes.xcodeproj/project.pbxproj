@@ -38,6 +38,10 @@
 		53C5793513F898C10052CD29 /* ContactList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C5793313F898C10052CD29 /* ContactList.xib */; };
 		53C5798613F8ADF60052CD29 /* ReadMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5798313F8ADF60052CD29 /* ReadMessageController.m */; };
 		53C5798713F8ADF60052CD29 /* ReadMessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C5798413F8ADF60052CD29 /* ReadMessageController.xib */; };
+		53DD9DF613F8C9E30058D832 /* MessageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD9DF113F8C9E30058D832 /* MessageList.m */; };
+		53DD9DF713F8C9E30058D832 /* MessageList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DD9DF213F8C9E30058D832 /* MessageList.xib */; };
+		53DD9DF813F8C9E30058D832 /* MessageListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DD9DF413F8C9E30058D832 /* MessageListCell.m */; };
+		53DD9DF913F8C9E30058D832 /* MessageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DD9DF513F8C9E30058D832 /* MessageListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +164,12 @@
 		53C5798213F8ADF60052CD29 /* ReadMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadMessageController.h; sourceTree = "<group>"; };
 		53C5798313F8ADF60052CD29 /* ReadMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadMessageController.m; sourceTree = "<group>"; };
 		53C5798413F8ADF60052CD29 /* ReadMessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadMessageController.xib; sourceTree = "<group>"; };
+		53DD9DF013F8C9E30058D832 /* MessageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageList.h; sourceTree = "<group>"; };
+		53DD9DF113F8C9E30058D832 /* MessageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageList.m; sourceTree = "<group>"; };
+		53DD9DF213F8C9E30058D832 /* MessageList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageList.xib; sourceTree = "<group>"; };
+		53DD9DF313F8C9E30058D832 /* MessageListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageListCell.h; sourceTree = "<group>"; };
+		53DD9DF413F8C9E30058D832 /* MessageListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageListCell.m; sourceTree = "<group>"; };
+		53DD9DF513F8C9E30058D832 /* MessageListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +222,12 @@
 		534F12E013F87EB500528F2D /* CipherNotes */ = {
 			isa = PBXGroup;
 			children = (
+				53DD9DF013F8C9E30058D832 /* MessageList.h */,
+				53DD9DF113F8C9E30058D832 /* MessageList.m */,
+				53DD9DF213F8C9E30058D832 /* MessageList.xib */,
+				53DD9DF313F8C9E30058D832 /* MessageListCell.h */,
+				53DD9DF413F8C9E30058D832 /* MessageListCell.m */,
+				53DD9DF513F8C9E30058D832 /* MessageListCell.xib */,
 				53C5797F13F8ADF50052CD29 /* Contact.h */,
 				53C5798213F8ADF60052CD29 /* ReadMessageController.h */,
 				53C5798313F8ADF60052CD29 /* ReadMessageController.m */,
@@ -444,6 +460,8 @@
 				53C5792B13F88AE80052CD29 /* HtmlEmailContent.html in Resources */,
 				53C5793513F898C10052CD29 /* ContactList.xib in Resources */,
 				53C5798713F8ADF60052CD29 /* ReadMessageController.xib in Resources */,
+				53DD9DF713F8C9E30058D832 /* MessageList.xib in Resources */,
+				53DD9DF913F8C9E30058D832 /* MessageListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +487,8 @@
 				53C5792513F882890052CD29 /* ComposeViewController.m in Sources */,
 				53C5793413F898C10052CD29 /* ContactList.m in Sources */,
 				53C5798613F8ADF60052CD29 /* ReadMessageController.m in Sources */,
+				53DD9DF613F8C9E30058D832 /* MessageList.m in Sources */,
+				53DD9DF813F8C9E30058D832 /* MessageListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
