@@ -88,6 +88,7 @@
     
     self.window.rootViewController = mvc;
     [mvc loadMessage:msg];
+    [mvc release];
     
     return YES;
 }

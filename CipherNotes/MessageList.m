@@ -109,7 +109,8 @@
         } else {
             [listOfMessages addObject:plainMessage];
         }
-    }        
+    }    
+    [fetchedObjects release];
     [fetchRequest release];
     
 }

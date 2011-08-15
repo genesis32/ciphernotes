@@ -153,7 +153,7 @@ static NSSet *fixedHeaders = nil;
 }
 
 -(NSString *) asString {
-    NSMutableString *res = [[NSMutableString alloc] init];
+    NSMutableString *res = [[[NSMutableString alloc] init] autorelease];
     for(NSString *key in self.headers) {
         NSString *value = (NSString *)[headers objectForKey:key];
         if(value != nil) {

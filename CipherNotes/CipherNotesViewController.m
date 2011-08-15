@@ -38,11 +38,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     
-    [ClientServerComm setUserId:1];
+    [ClientServerComm setUserId:2];
     
     [CryptoUtils seedPRNG]; 
-    
-    AppData *appData = [AppData appData];
     
     BOOL isRegistered = [ClientServerComm isActivated];
     if(!isRegistered) {
@@ -51,6 +49,7 @@
         NSString *pubkey = [CryptoUtils getPublicKey:rsa];
         
         [ClientServerComm activate:pubkey]; 
+        AppData *appData = [AppData appData];
         [appData savePrivateKey:[CryptoUtils getPrivateKey:rsa]];
         
         NSLog(@"Activation Successful");
